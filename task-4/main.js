@@ -21,11 +21,14 @@ listButton.addEventListener("click", (e)=> {
     const tempObject = {text: inputField.value, priority: Number(priorityField.value)};
     console.log(tempObject);
     importantThings.push(tempObject);
-    console.log(importantThings)
+    console.log(importantThings);
     const  newListItem = document.createElement("li");
     newListItem.innerText = inputField.value + " " + priorityField.value
     orderedList.appendChild(newListItem);
     inputField.value = "";
-    console.log(orderedList)
+    console.log(orderedList);
 })
 
+for(i=0;i<importantThings.length;i++){
+    importantThings[0]
+}
